@@ -6,7 +6,7 @@ class App extends Component  {
     state = {
         userData: {
             name: 'Nikola Tesla',
-            avatarUrl: 'https://avatars3.githubusercontent.com/u10001',
+            avatar_url: 'https://avatars3.githubusercontent.com/u10001',
         },
     };
 

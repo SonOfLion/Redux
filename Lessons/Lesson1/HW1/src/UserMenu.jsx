@@ -9,7 +9,7 @@ class UserMenu extends Component {
                     Hello, {this.context.name}
                 </span>
                 <img alt="User Avatar"
-                    src={this.context.avatarUrl}
+                    src={this.context.avatar_url}
                     className="menu__avatar">
                 </img>
             </div>
