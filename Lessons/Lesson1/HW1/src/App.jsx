@@ -12,11 +12,13 @@ class App extends Component  {
 
     render () {
         return(
-            <Context.Provider value={this.state.userData}>
-                <Header/>
-            </Context.Provider>
+            <div className="page">
+                <Context.Provider value={this.state.userData}>
+                    <Header/>
+                </Context.Provider>
+            </div>
         );
-    }
+    };
 };
 
 export default App;

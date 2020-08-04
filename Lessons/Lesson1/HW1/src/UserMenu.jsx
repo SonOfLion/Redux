@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Context } from './Context';
 
-function UserMenu () {
-    return(
-        <div className="menu">
-            <span className="menu__greeting">Hello, Nikola Tesla</span>
-            <img alt="User Avatar" src="https://avatars3.githubusercontent.com/u10001" className="menu__avatar"></img>
-        </div>
-    );
+class UserMenu extends Component {
+    render() {
+        return(
+            <div className="menu">
+                <span className="menu__greeting">
+                    Hello, {this.context.name}
+                </span>
+                <img alt="User Avatar"
+                    src={this.context.avatarUrl}
+                    className="menu__avatar">
+                </img>
+            </div>
+        );
+    };
 };
+
+UserMenu.contextType = Context;
 
 export default UserMenu;
