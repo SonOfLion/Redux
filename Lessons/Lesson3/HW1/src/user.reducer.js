@@ -1,6 +1,6 @@
-import  {SET_USER, DELETE_USER} from './user.actions';
+import  {SET_USER, REMOVE_PRODUCT} from './user.actions';
 
-const initialState = null
+const initialState = null;
 
 const userReducer = (state = initialState, action) => {
     
@@ -9,7 +9,7 @@ const userReducer = (state = initialState, action) => {
             return action.payload.userData;
         };
 
-        case DELETE_USER: {
+        case REMOVE_PRODUCT: {
             return null;
         };
             

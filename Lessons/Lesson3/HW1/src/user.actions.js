@@ -1,6 +1,5 @@
 export const SET_USER = 'USERS/SET_USER';
-export const DELETE_USER = 'USERS/DELETE_USER';
-
+export const REMOVE_USER = 'USERS/REMOVE_USER';
 
 export const setUser = (userData) => {
     return {
@@ -13,7 +12,7 @@ export const setUser = (userData) => {
 
 export const removeUser = () => {
     return {
-        type: DELETE_USER
+        type: REMOVE_USER
     };
 };
 
