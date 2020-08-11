@@ -15,7 +15,6 @@ export const removeProduct = (productId) => {
         type: REMOVE_PRODUCT,
         payload: {
             productId
-            
         }
     };
 };
